@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>엘소드 강화 시뮬레이터</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="엘소드 강화 시뮬레이터">
+  <meta name="description" content="엘소드 강화 시뮬레이터입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="엘소드 강화 시뮬레이터">
+  <meta property="og:description" content="엘소드 강화 시뮬레이터입니다.">
+  <meta property="og:url" content="http://dallmoone.dothome.co.kr/">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- <div class="loading" id="loading">
+      <img class="enhance-img hammer" id="hammer" src="2672327.png">
+      <img class="enhance-img anvil" src="2672328.png">
+    </div> -->
+    <div>
+      <div id="step">
+        강화 단계
+      </div>
+      <div id="result">
+        성공여부
+      </div>
+      <div id="text">
+        강화시도횟수
+      </div>
+      <div id="recovery-count">
+        복원횟수
+      </div>
+    </div>
+    <div>
+    <label for="recovery" class="btn btn-outline-dark">
+      <input type="checkbox" id="recovery">
+      축복받은 복원의 주문서 사용
+    </label>
+    <label for="elhammer" class="btn btn-outline-dark">
+        <input type="checkbox" id="elhammer">
+      엘의 해머 사용
+    </label>
+    </div>
+    <button id="enhance" class="btn btn-outline-success">
+      일반강화
+    </button>
+    <button id="protected-enhance" class="btn btn-outline-primary">
+      보호강화
+    </button>
+    <button id="use-recovery" class="btn btn-outline-warning">복원하기</button>
+    <div id="simulator">
+      <div class="simulator-header">
+        <select>
+          <option>앤 봇</option>
+          <option>렌파드 봇</option>
+          <option>토마 봇</option>
+          <option>아가타 봇</option>
+          <option>렌토 봇</option>
+          <option>한나 봇</option>
+          <option>호레이쇼 봇</option>
+          <option>스테엘 봇</option>
+          <option>듀렌다 봇</option>
+          <option>장비정제기 봇</option>
+        </select>
+      </div>
+      <div class="simulator-div">
+        시도 횟수 > <input type="number" id="simul-count" placeholder="최대 1억번까지" min="0" max="100000000">
+      </div>
+      <div>
+        시작할 강화수치 :
+        <select id="simul-start-level">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+        </select>
+      </div>
+      <div>
+        원하는 강화수치 :
+        <select id="simul-level">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+      </div>
+      <div>
+        <button id="simul-button" class="btn btn-outline-dark">
+          일반
+        </button>
+        <button id="simul-protected-button" class="btn btn-outline-dark">
+          플루 사용
+        </button>
+        <button id="reset" class="btn btn-outline-dark">
+          입력 값 초기화
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

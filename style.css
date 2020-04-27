@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+div {
+  margin: 20px 0;
+}
+.select-none {
+  user-select: none;
+}
+.container {
+  box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  padding: 50px 20px;
+  position: relative;
+}
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.25);
+  margin: 0px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 40px;
+  display: none;
+}
+.hammer {
+  width: 40%;
+  margin: 50px 0 0 100px;
+}
+.anvil {
+  width: 70%;
+}
+.rotate {
+  transform: rotate(40deg);
+}
+.btn {
+  font-weight: 800;
+  white-space: nowrap;
+}
+#step{
+  font-size: 50px;
+}
+#result{
+  font-size: 30px;
+}
+#text{
+  font-size: 30px;
+}
+#recovery-count {
+  font-size: 20px;
+}
+#simulator {
+  border-radius: 10px;
+  border: 1px solid burlywood;
+  padding: 10px;
+}
+.simulator-header {
+  font-weight: 800;
+}
+.simulator-div {
+  margin: 10px 0;
+}
+#simul-start-level {
+  cursor: pointer;
+}
+#simul-level {
+  cursor: pointer;
+}
